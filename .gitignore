@@ -1,0 +1,51 @@
+# Byte-compiled files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+env/
+venv/
+ENV/
+.VENV/
+
+# Django settings local configuration
+*.sqlite3
+*.env
+local_settings.py
+
+# Logs
+*.log
+
+# Media and static files
+media/
+staticfiles/
+static/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Coverage and testing
+htmlcov/
+.coverage
+.tox/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Migrations
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Deployment files
+*.bak
+*.swp
+*.swo
