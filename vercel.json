@@ -4,7 +4,7 @@
       "src": "core/wsgi.py",
       "use": "@vercel/python",
       "config": {
-        "maxLambdaSize": "20mb",
+        "maxLambdaSize": "15mb",
         "runtime": "python3.11"
       }
     }
@@ -14,5 +14,8 @@
       "src": "/(.*)",
       "dest": "core/wsgi.py"
     }
-  ]
+  ],
+  "scripts": {
+    "postinstall": "pip install -r requirements.txt"
+  }
 }
